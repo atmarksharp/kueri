@@ -1,6 +1,5 @@
 require "kueri/version"
 require "nokogiri"
-require "open-uri"
 
 module Kueri
   class E
@@ -61,12 +60,9 @@ module Kueri
 
   # ====================
 
-  def self.parse(str)
-    doc = Nokogiri::HTML(str)
+  def self.parse(s)
+    doc = Nokogiri::HTML(s)
     E.new(doc)
   end
-
-  def self.load(url)
-    self.parse( open(url).read )
-  end
+  
 end
