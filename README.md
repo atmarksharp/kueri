@@ -1,6 +1,8 @@
 # Kueri
 
-jquery-like http parser using nokogiri
+jquery-like http parser using nokogiri &ensp; (**kueri** means *"query"* in Japanese)
+
+https://rubygems.org/gems/kueri
 
 ## Installation
 
