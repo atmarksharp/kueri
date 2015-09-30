@@ -1,0 +1,3 @@
+module Kueri
+  VERSION = "0.1.0"
+end
