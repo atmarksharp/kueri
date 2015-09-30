@@ -20,7 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
+```ruby
+require "kueri"
+require "open-uri"
 
+doc = Kueri.parse ( open("http://google.com") )
+doc["div"].size # 20
+```
+
+- `Kueri.parse()` is alias to `Nokogiri::HTML()`
+- `doc[selector]` is alias to `doc.css()`
+- if `selector` is a number, `list[n]` means **nth of list**
+- Other methods of `doc` are subset of Nokogiri's
 
 ## Development
 
