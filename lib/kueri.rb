@@ -11,7 +11,7 @@ module Kueri
 
     def [](query)
       if query.is_a? String
-        self.search(query)
+        self.find(query)
       elsif query.is_a? Fixnum
         E.new( @elm[query] )
       else
@@ -19,7 +19,7 @@ module Kueri
       end
     end
 
-    def search(query)
+    def find(query)
       elm = @elm.css(query)
       E.new(elm)
     end
