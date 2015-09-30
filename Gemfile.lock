@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     kueri (0.1.0)
-      nokogiri
+      nokogiri (~> 1.6)
 
 GEM
   remote: https://rubygems.org/
